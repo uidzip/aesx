@@ -1,11 +1,12 @@
 Gem::Specification.new do |spec|
   spec.name          = "aesx"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.4"
   spec.authors       = ["Tom lahti"]
   spec.email         = ["uidzip@gmail.com"]
-  spec.summary       = "A lightweight encryption library, in the style of the AES gem"
-  spec.description   = "Provides almost the same interface as the AES gem, but with modern ciphers. The default cipher is AES-256-GCM. For a list of supported ciphers, run AESX.cipher_list"
+  spec.summary       = "AES gem, but with GCM/CTR ciphers, compression, and more"
+  spec.description   = "Provides almost the same interface as the AES gem, but with modern ciphers and compression. The default cipher is AES-256-GCM. See the README for details."
   spec.license       = "MIT"
+  spec.homepage      = 'https://rubygems.org/gems/aesx'
 
   spec.files         = Dir["lib/**/*.rb", "test_aesx.rb", "README.md", "LICENSE"]
   spec.require_paths = ["lib"]
@@ -25,6 +26,8 @@ Gem::Specification.new do |spec|
   end
     
   spec.homepage = "https://github.com/uidzip/aesx"
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["documentation_uri"] = "https://www.rubydoc.info/gems/aesx"
   spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["bug_tracker_uri"] = "#{spec.homepage}/issues"
 end
